@@ -1,0 +1,62 @@
+=== VALIDATION REPORT ===
+
+1. DESTINATION GROUP COUNTS:
+   Group  1:  8/8 students [OK]
+   Group  2:  8/8 students [OK]
+   Group  3:  8/8 students [OK]
+   Group  4:  8/8 students [OK]
+   Group  5:  7/7 students [OK]
+   Group  6:  6/7 students [OK]
+   Group  7:  7/7 students [OK]
+   Group  8:  6/7 students [OK]
+   Group  9:  6/7 students [OK]
+   Group 10:  6/7 students [OK]
+   Group 11:  6/7 students [OK]
+   Group 12:  6/7 students [OK]
+   Group 13:  6/7 students [OK]
+   Group 14:  7/7 students [OK]
+   Group 15:  6/7 students [OK]
+   Group 16:  7/7 students [OK]
+   Group 17:  7/7 students [OK]
+   Group 18:  7/7 students [OK]
+   Group 19:  7/7 students [OK]
+   Group 20:  7/7 students [OK]
+   Group 21:  7/7 students [OK]
+   Group 22:  7/7 students [OK]
+   Group 23:  6/6 students [OK]
+
+2. CAPACITY VERIFICATION:
+   ✓ All groups within capacity limits
+
+3. UNASSIGNED STUDENTS:
+   Total unassigned: 8
+   - Line 145: IDE, G9, Stage=oui, P1
+   - Line 155: IDE, G1, Stage=non, P1
+   - Line 157: IDE, G4, Stage=non, P1
+   - Line 158: PPH, G4, Stage=non, P1
+   - Line 160: IDE, G7, Stage=non, P1
+   - Line 162: IDE, G3, Stage=non, P1
+   - Line 163: IDE, G5, Stage=non, P1
+   - Line 164: IDE, G5, Stage=non, P1
+
+4. PERIOD PLACEMENT VERIFICATION:
+   ✓ All P1 students in allowed groups {1,2,3,4,17,18,19,20,21,22,23}
+   ✓ All P2 students in allowed groups {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+
+5. STAGE CONSTRAINT VERIFICATION:
+   ✓ No Stage='oui' students in forbidden groups {1,2,3,4}
+
+6. MIXING METRICS:
+   Average max GROUPE repetition per destination: 1.43
+   Average max Metier repetition per destination: 3.70
+
+7. SOURCE GROUPE DISTRIBUTION:
+   G1: 18 students → 18 unique destinations
+   G2: 18 students → 18 unique destinations
+   G3: 18 students → 16 unique destinations
+   G4: 16 students → 14 unique destinations
+   G5: 16 students → 14 unique destinations
+   G6: 18 students → 18 unique destinations
+   G7: 17 students → 17 unique destinations
+   G8: 18 students → 15 unique destinations
+   G9: 17 students → 16 unique destinations
