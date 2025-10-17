@@ -1,0 +1,296 @@
+{
+  "title": "DevOps Maturity Assessment - Banking Environment",
+  "description": "This survey assesses your organization's DevOps maturity and DORA metrics implementation. Your responses will help identify areas for improvement and benchmark against industry standards.",
+  "sections": {
+    "demographics": [
+      {
+        "question": "What is your role in the organization?",
+        "type": "choice",
+        "options": [
+          "Developer/Engineer",
+          "DevOps Engineer/SRE",
+          "IT Operations/Infrastructure",
+          "Security Engineer",
+          "Compliance/Risk Management",
+          "Project Manager",
+          "IT Management",
+          "Other"
+        ],
+        "required": true
+      },
+      {
+        "question": "How many years of experience do you have in software development/IT?",
+        "type": "choice",
+        "options": [
+          "< 1 year",
+          "1-3 years",
+          "3-5 years",
+          "5-10 years",
+          "10+ years"
+        ],
+        "required": true
+      },
+      {
+        "question": "What is the size of your development team?",
+        "type": "choice",
+        "options": [
+          "1-5",
+          "6-20",
+          "21-50",
+          "51-100",
+          "100+"
+        ],
+        "required": true
+      },
+      {
+        "question": "Which business domain does your team primarily support?",
+        "type": "choice",
+        "options": [
+          "Retail Banking",
+          "Investment Banking",
+          "Risk Management",
+          "Compliance/Regulatory",
+          "Payments/Transactions",
+          "Core Banking Systems",
+          "Digital Banking/Mobile",
+          "Data Analytics/BI",
+          "Other"
+        ],
+        "required": true
+      }
+    ],
+    "culture": [
+      {
+        "question": "How would you rate the collaboration between development and operations teams?",
+        "type": "scale",
+        "scale_min": 1,
+        "scale_max": 5,
+        "scale_labels": [
+          "Poor collaboration",
+          "Excellent collaboration"
+        ],
+        "category": "culture",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "To what extent does your organization embrace a 'fail fast, learn fast' culture?",
+        "type": "scale",
+        "scale_min": 1,
+        "scale_max": 5,
+        "scale_labels": [
+          "Not at all",
+          "Fully embraced"
+        ],
+        "category": "culture",
+        "weight": 0.8,
+        "required": true
+      },
+      {
+        "question": "How frequently do development and operations teams work together on projects?",
+        "type": "choice",
+        "options": [
+          "Never",
+          "Rarely",
+          "Sometimes",
+          "Often",
+          "Always"
+        ],
+        "category": "culture",
+        "weight": 0.9,
+        "required": true
+      },
+      {
+        "question": "Does your organization have cross-functional teams (DevOps/SRE model)?",
+        "type": "choice",
+        "options": [
+          "No",
+          "Planning to implement",
+          "Partially implemented",
+          "Fully implemented"
+        ],
+        "category": "culture",
+        "weight": 1.0,
+        "required": true
+      }
+    ],
+    "deployment": [
+      {
+        "question": "How frequently does your team deploy code to production?",
+        "type": "choice",
+        "options": [
+          "Fewer than once per month",
+          "Once per month",
+          "Once per week",
+          "Multiple times per week",
+          "On-demand (multiple times per day)"
+        ],
+        "category": "deployment_frequency",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "What is the typical lead time from code commit to production deployment?",
+        "type": "choice",
+        "options": [
+          "More than 6 months",
+          "1-6 months",
+          "1 week - 1 month",
+          "1 day - 1 week",
+          "Less than 1 day"
+        ],
+        "category": "lead_time",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "How long does it typically take to restore service after an incident?",
+        "type": "choice",
+        "options": [
+          "More than 1 week",
+          "1 day - 1 week",
+          "1 hour - 1 day",
+          "Less than 1 hour",
+          "Less than 1 hour (automated)"
+        ],
+        "category": "mttr",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "What percentage of deployments result in failures requiring rollback?",
+        "type": "choice",
+        "options": [
+          "60%+",
+          "45-60%",
+          "30-45%",
+          "15-30%",
+          "0-15%"
+        ],
+        "category": "failure_rate",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "What deployment strategy does your team primarily use?",
+        "type": "choice",
+        "options": [
+          "Manual deployments",
+          "Automated deployments with manual approval",
+          "Automated deployments with automated testing",
+          "Continuous deployment",
+          "GitOps/declarative deployments"
+        ],
+        "category": "deployment",
+        "weight": 0.9,
+        "required": true
+      }
+    ],
+    "monitoring": [
+      {
+        "question": "How comprehensive is your application monitoring?",
+        "type": "scale",
+        "scale_min": 1,
+        "scale_max": 5,
+        "scale_labels": [
+          "Basic logging only",
+          "Full observability stack"
+        ],
+        "category": "monitoring",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "Do you have automated alerting for production issues?",
+        "type": "choice",
+        "options": [
+          "No",
+          "Basic alerts",
+          "Comprehensive alerting",
+          "AI-driven alerting"
+        ],
+        "category": "monitoring",
+        "weight": 0.9,
+        "required": true
+      },
+      {
+        "question": "How do you track application performance metrics?",
+        "type": "choice",
+        "options": [
+          "Manual monitoring",
+          "Basic dashboards",
+          "Real-time dashboards with alerts",
+          "AI/ML-based anomaly detection"
+        ],
+        "category": "monitoring",
+        "weight": 0.8,
+        "required": true
+      }
+    ],
+    "security": [
+      {
+        "question": "How is security integrated into your development process?",
+        "type": "choice",
+        "options": [
+          "Security as an afterthought",
+          "Manual security reviews",
+          "Automated security scanning",
+          "DevSecOps with security champions",
+          "Security by design/Shift-left security"
+        ],
+        "category": "security",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "What security testing is performed before deployment?",
+        "type": "checkbox",
+        "options": [
+          "Static Application Security Testing (SAST)",
+          "Dynamic Application Security Testing (DAST)",
+          "Software Composition Analysis (SCA)",
+          "Container security scanning",
+          "Infrastructure as Code security",
+          "None of the above"
+        ],
+        "category": "security",
+        "weight": 0.9,
+        "required": true
+      }
+    ],
+    "compliance": [
+      {
+        "question": "How does your team handle regulatory compliance in deployments?",
+        "type": "choice",
+        "options": [
+          "Manual compliance checks",
+          "Automated compliance validation",
+          "Compliance as code",
+          "Integrated compliance monitoring"
+        ],
+        "category": "compliance",
+        "weight": 1.0,
+        "required": true
+      },
+      {
+        "question": "What audit capabilities do you have for deployment changes?",
+        "type": "choice",
+        "options": [
+          "Basic logging",
+          "Change tracking",
+          "Automated audit trails",
+          "Real-time compliance monitoring"
+        ],
+        "category": "compliance",
+        "weight": 0.9,
+        "required": true
+      }
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-10-17T15:35:45.883572",
+    "target_audience": "Banking and Financial Services IT Teams",
+    "estimated_duration": "15-20 minutes"
+  }
+}
