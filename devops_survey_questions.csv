@@ -1,0 +1,92 @@
+Question,Type,Description,Options,Required,Scale Min,Scale Max,Scale Labels
+What is your role in the organization?,Multiple Choice,,"Developer/Engineer
+DevOps Engineer/SRE
+IT Operations/Infrastructure
+Security Engineer
+Compliance/Risk Management
+Project Manager
+IT Management
+Other",Yes,,,
+How many years of experience do you have in software development/IT?,Multiple Choice,,"< 1 year
+1-3 years
+3-5 years
+5-10 years
+10+ years",Yes,,,
+What is the size of your development team?,Multiple Choice,,"1-5
+6-20
+21-50
+51-100
+100+",Yes,,,
+Which business domain does your team primarily support?,Multiple Choice,,"Retail Banking
+Investment Banking
+Risk Management
+Compliance/Regulatory
+Payments/Transactions
+Core Banking Systems
+Digital Banking/Mobile
+Data Analytics/BI
+Other",Yes,,,
+How would you rate the collaboration between development and operations teams?,Linear Scale,,,Yes,1,5,Poor collaboration|Excellent collaboration
+"To what extent does your organization embrace a 'fail fast, learn fast' culture?",Linear Scale,,,Yes,1,5,Not at all|Fully embraced
+How frequently do development and operations teams work together on projects?,Multiple Choice,,"Never
+Rarely
+Sometimes
+Often
+Always",Yes,,,
+Does your organization have cross-functional teams (DevOps/SRE model)?,Multiple Choice,,"No
+Planning to implement
+Partially implemented
+Fully implemented",Yes,,,
+How frequently does your team deploy code to production?,Multiple Choice,,"Fewer than once per month
+Once per month
+Once per week
+Multiple times per week
+On-demand (multiple times per day)",Yes,,,
+What is the typical lead time from code commit to production deployment?,Multiple Choice,,"More than 6 months
+1-6 months
+1 week - 1 month
+1 day - 1 week
+Less than 1 day",Yes,,,
+How long does it typically take to restore service after an incident?,Multiple Choice,,"More than 1 week
+1 day - 1 week
+1 hour - 1 day
+Less than 1 hour
+Less than 1 hour (automated)",Yes,,,
+What percentage of deployments result in failures requiring rollback?,Multiple Choice,,"60%+
+45-60%
+30-45%
+15-30%
+0-15%",Yes,,,
+What deployment strategy does your team primarily use?,Multiple Choice,,"Manual deployments
+Automated deployments with manual approval
+Automated deployments with automated testing
+Continuous deployment
+GitOps/declarative deployments",Yes,,,
+How comprehensive is your application monitoring?,Linear Scale,,,Yes,1,5,Basic logging only|Full observability stack
+Do you have automated alerting for production issues?,Multiple Choice,,"No
+Basic alerts
+Comprehensive alerting
+AI-driven alerting",Yes,,,
+How do you track application performance metrics?,Multiple Choice,,"Manual monitoring
+Basic dashboards
+Real-time dashboards with alerts
+AI/ML-based anomaly detection",Yes,,,
+How is security integrated into your development process?,Multiple Choice,,"Security as an afterthought
+Manual security reviews
+Automated security scanning
+DevSecOps with security champions
+Security by design/Shift-left security",Yes,,,
+What security testing is performed before deployment?,Checkboxes,,"Static Application Security Testing (SAST)
+Dynamic Application Security Testing (DAST)
+Software Composition Analysis (SCA)
+Container security scanning
+Infrastructure as Code security
+None of the above",Yes,,,
+How does your team handle regulatory compliance in deployments?,Multiple Choice,,"Manual compliance checks
+Automated compliance validation
+Compliance as code
+Integrated compliance monitoring",Yes,,,
+What audit capabilities do you have for deployment changes?,Multiple Choice,,"Basic logging
+Change tracking
+Automated audit trails
+Real-time compliance monitoring",Yes,,,
